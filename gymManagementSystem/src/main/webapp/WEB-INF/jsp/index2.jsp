@@ -21,21 +21,6 @@
         <div class="logo">STAMINA.</div>
         <ul>
             <li><a href="/index" class="active">HOME</a></li>
-            <li><a href="/customer-modification">CUSTOMERS</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">GYM ITEM</a>
-                <div class="dropdown-content">
-                    <a href="/gymitem">ADD ITEMS</a>
-                    <a href="/gymitems">VIEW ITEMS</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">GYM SLOT</a>
-                <div class="dropdown-content">
-                    <a href="/slotentry">ADD SLOT</a>
-                    <a href="/edit-slot">VIEW SLOT</a>
-                </div>
-            </li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">BOOKING</a>
                 <div class="dropdown-content">
@@ -43,7 +28,7 @@
                     <a href="/booked">VIEW BOOKING</a>
                 </div>
             </li>
-            <li><a href="/feedback-report">FEEDBACKS</a></li>
+            <li><a href="/feedback">FEEDBACK</a></li>
             
             <li><a href="/logout">LOGOUT</a></li>
         </ul>

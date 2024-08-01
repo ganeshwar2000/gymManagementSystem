@@ -20,14 +20,14 @@
 <th>Slot Id</th>
 <th>Slot Time</th>
 <th>Slot Price</th>
-<th>Enquire</th>
+<th>Edit</th>
 </tr>
 <c:forEach items="${slotList}" var="slot">
 <tr>
 <td>${slot.slotId}</td>
 <td>${slot.slotTime}</td>
 <td>${slot.pricing}</td>
-<td><a href="/slot-book/${slot.slotId}">Enquire</a></td>
+<td><a href="/slot/edit/${slot.slotId}">Edit</a></td>
 </tr>
 </c:forEach>
 </table>

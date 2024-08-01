@@ -1,6 +1,7 @@
 package com.fitness.gymManagementSystem.dao;
 
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -15,7 +16,7 @@ public class SlotItemDaoImpl implements SlotItemDao {
 	private SlotItemRepository repository;
 	
 	@Override
-	public void saveNewSlotItem(SlotItem slotItem) {
+	public void save(SlotItem slotItem) {
 		repository.save(slotItem);
 
 	}
@@ -30,6 +31,19 @@ public class SlotItemDaoImpl implements SlotItemDao {
 	public SlotItem findItemById(SlotItemEmbed id) {
 		// TODO Auto-generated method stub
 		return repository.findById(id).get();
+	}
+	
+	@Override
+	public Integer findSeatBookedById(SlotItemEmbed id) {
+		return repository.findSeatBookedById(id);
+	}
+	@Override
+	public Set<SlotItemEmbed> findAllEmbeds(){
+		return repository.findAllEmbeds();
+	}
+	@Override
+	public boolean isItemIdAvailable(Long itemId) {
+		return repository.existsByItemId(itemId);
 	}
 
 }

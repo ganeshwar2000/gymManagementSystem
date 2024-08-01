@@ -46,6 +46,20 @@ public class GymItemDaoImpl implements GymItemDao {
 		return val;
 	}
 	
+	@Override
+	@Transactional
+	public void removeItem(Long id) {
+		repository.deleteById(id);
+	}
 	
+	@Override
+	public Integer findTotalSeatById(long id) {
+		return repository.findTotalSeatById(id);
+	}
+	
+	@Override
+	public String findItemName(Long itemId) {
+		return repository.findItemName(itemId);
+	}
 
 }
